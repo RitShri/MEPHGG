@@ -1,0 +1,4771 @@
+tag: 000
+alg: ddpg
+learn: normal
+env: FetchPush-v1
+goal: custom
+init_offset: 1.0
+graph: False
+show_goals: 0
+play_path: None
+play_epoch: latest
+stop_hgg_threshold: 2
+n_x: 31
+n_y: 31
+n_z: 11
+gamma: 0.98
+clip_return: True
+eps_act: 0.3
+std_act: 0.2
+pi_lr: 0.001
+q_lr: 0.001
+act_l2: 1.0
+polyak: 0.95
+epoches: 20
+cycles: 20
+episodes: 50
+timesteps: 50
+train_batches: 20
+buffer_size: 10000
+buffer_type: energy
+batch_size: 256
+warmup: 10000
+her: future
+her_ratio: 0.8
+pool_rule: full
+hgg_c: 3.0
+hgg_L: 5.0
+hgg_pool_size: 1000
+save_acc: True
+num_vertices: [31, 31, 11]
+goal_based: True
+clip_return_l: -49.99999999999996
+clip_return_r: 0.0
+*** network initialization complete ***
+*** tester initialization complete ***
+2021-12-07 06:04:34 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 0/20   |
+| Episodes      | 50     |
+| Timesteps     | 2500   |
+| TimeCost(sec) | 21.502 |
+| Pi_q_loss     |        |
+| Pi_l2_loss    |        |
+| Q_loss        |        |
+| Success       | 0.04   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:04:55 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 1/20   |
+| Episodes      | 100    |
+| Timesteps     | 5000   |
+| TimeCost(sec) | 21.339 |
+| Pi_q_loss     |        |
+| Pi_l2_loss    |        |
+| Q_loss        |        |
+| Success       | 0.11   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:05:17 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 2/20   |
+| Episodes      | 150    |
+| Timesteps     | 7500   |
+| TimeCost(sec) | 21.324 |
+| Pi_q_loss     |        |
+| Pi_l2_loss    |        |
+| Q_loss        |        |
+| Success       | 0.09   |
++---------------+--------+
+2021-12-07 06:05:38 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 3/20   |
+| Episodes      | 200    |
+| Timesteps     | 10000  |
+| TimeCost(sec) | 21.395 |
+| Pi_q_loss     | 0.452  |
+| Pi_l2_loss    | 0.008  |
+| Q_loss        | 0.254  |
+| Success       | 0.1    |
++---------------+--------+
+2021-12-07 06:06:36 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 4/20   |
+| Episodes      | 250    |
+| Timesteps     | 12500  |
+| TimeCost(sec) | 57.799 |
+| Pi_q_loss     | 0.797  |
+| Pi_l2_loss    | 0.011  |
+| Q_loss        | 0.023  |
+| Success       | 0.14   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:07:38 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 5/20   |
+| Episodes      | 300    |
+| Timesteps     | 15000  |
+| TimeCost(sec) | 61.359 |
+| Pi_q_loss     | 1.382  |
+| Pi_l2_loss    | 0.039  |
+| Q_loss        | 0.013  |
+| Success       | 0.01   |
++---------------+--------+
+2021-12-07 06:08:37 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 6/20   |
+| Episodes      | 350    |
+| Timesteps     | 17500  |
+| TimeCost(sec) | 58.501 |
+| Pi_q_loss     | 1.9    |
+| Pi_l2_loss    | 0.052  |
+| Q_loss        | 0.015  |
+| Success       | 0.04   |
++---------------+--------+
+2021-12-07 06:09:35 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 7/20   |
+| Episodes      | 400    |
+| Timesteps     | 20000  |
+| TimeCost(sec) | 57.651 |
+| Pi_q_loss     | 2.301  |
+| Pi_l2_loss    | 0.063  |
+| Q_loss        | 0.017  |
+| Success       | 0.12   |
++---------------+--------+
+2021-12-07 06:10:34 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 8/20   |
+| Episodes      | 450    |
+| Timesteps     | 22500  |
+| TimeCost(sec) | 58.813 |
+| Pi_q_loss     | 2.606  |
+| Pi_l2_loss    | 0.075  |
+| Q_loss        | 0.021  |
+| Success       | 0.05   |
++---------------+--------+
+2021-12-07 06:11:32 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 9/20   |
+| Episodes      | 500    |
+| Timesteps     | 25000  |
+| TimeCost(sec) | 58.322 |
+| Pi_q_loss     | 3.01   |
+| Pi_l2_loss    | 0.085  |
+| Q_loss        | 0.026  |
+| Success       | 0.08   |
++---------------+--------+
+2021-12-07 06:12:30 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 10/20  |
+| Episodes      | 550    |
+| Timesteps     | 27500  |
+| TimeCost(sec) | 57.947 |
+| Pi_q_loss     | 3.166  |
+| Pi_l2_loss    | 0.104  |
+| Q_loss        | 0.029  |
+| Success       | 0.11   |
++---------------+--------+
+2021-12-07 06:13:28 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 11/20  |
+| Episodes      | 600    |
+| Timesteps     | 30000  |
+| TimeCost(sec) | 57.697 |
+| Pi_q_loss     | 3.311  |
+| Pi_l2_loss    | 0.104  |
+| Q_loss        | 0.043  |
+| Success       | 0.09   |
++---------------+--------+
+2021-12-07 06:14:26 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 12/20  |
+| Episodes      | 650    |
+| Timesteps     | 32500  |
+| TimeCost(sec) | 58.291 |
+| Pi_q_loss     | 3.403  |
+| Pi_l2_loss    | 0.106  |
+| Q_loss        | 0.044  |
+| Success       | 0.1    |
++---------------+--------+
+2021-12-07 06:15:25 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 13/20  |
+| Episodes      | 700    |
+| Timesteps     | 35000  |
+| TimeCost(sec) | 58.885 |
+| Pi_q_loss     | 3.574  |
+| Pi_l2_loss    | 0.11   |
+| Q_loss        | 0.06   |
+| Success       | 0.07   |
++---------------+--------+
+2021-12-07 06:16:26 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 14/20  |
+| Episodes      | 750    |
+| Timesteps     | 37500  |
+| TimeCost(sec) | 59.886 |
+| Pi_q_loss     | 3.726  |
+| Pi_l2_loss    | 0.111  |
+| Q_loss        | 0.062  |
+| Success       | 0.04   |
++---------------+--------+
+2021-12-07 06:17:28 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 15/20  |
+| Episodes      | 800    |
+| Timesteps     | 40000  |
+| TimeCost(sec) | 62.071 |
+| Pi_q_loss     | 3.721  |
+| Pi_l2_loss    | 0.11   |
+| Q_loss        | 0.077  |
+| Success       | 0.07   |
++---------------+--------+
+2021-12-07 06:18:32 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 16/20  |
+| Episodes      | 850    |
+| Timesteps     | 42500  |
+| TimeCost(sec) | 64.151 |
+| Pi_q_loss     | 3.764  |
+| Pi_l2_loss    | 0.117  |
+| Q_loss        | 0.104  |
+| Success       | 0.1    |
++---------------+--------+
+2021-12-07 06:19:33 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 17/20  |
+| Episodes      | 900    |
+| Timesteps     | 45000  |
+| TimeCost(sec) | 60.559 |
+| Pi_q_loss     | 3.728  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.112  |
+| Success       | 0.2    |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:20:36 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 18/20  |
+| Episodes      | 950    |
+| Timesteps     | 47500  |
+| TimeCost(sec) | 62.544 |
+| Pi_q_loss     | 3.615  |
+| Pi_l2_loss    | 0.142  |
+| Q_loss        | 0.133  |
+| Success       | 0.24   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:21:37 000
++---------------+--------+
+| Epoch         | 0/20   |
+| Cycle         | 19/20  |
+| Episodes      | 1000   |
+| Timesteps     | 50000  |
+| TimeCost(sec) | 60.573 |
+| Pi_q_loss     | 3.458  |
+| Pi_l2_loss    | 0.138  |
+| Q_loss        | 0.134  |
+| Success       | 0.38   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:22:38 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 0/20   |
+| Episodes      | 1050   |
+| Timesteps     | 52500  |
+| TimeCost(sec) | 60.771 |
+| Pi_q_loss     | 3.306  |
+| Pi_l2_loss    | 0.14   |
+| Q_loss        | 0.157  |
+| Success       | 0.38   |
++---------------+--------+
+2021-12-07 06:23:39 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 1/20   |
+| Episodes      | 1100   |
+| Timesteps     | 55000  |
+| TimeCost(sec) | 60.537 |
+| Pi_q_loss     | 3.148  |
+| Pi_l2_loss    | 0.14   |
+| Q_loss        | 0.152  |
+| Success       | 0.42   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:24:41 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 2/20   |
+| Episodes      | 1150   |
+| Timesteps     | 57500  |
+| TimeCost(sec) | 61.033 |
+| Pi_q_loss     | 3.042  |
+| Pi_l2_loss    | 0.14   |
+| Q_loss        | 0.154  |
+| Success       | 0.55   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:25:43 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 3/20   |
+| Episodes      | 1200   |
+| Timesteps     | 60000  |
+| TimeCost(sec) | 62.173 |
+| Pi_q_loss     | 2.973  |
+| Pi_l2_loss    | 0.144  |
+| Q_loss        | 0.169  |
+| Success       | 0.48   |
++---------------+--------+
+2021-12-07 06:26:44 000
++---------------+-------+
+| Epoch         | 1/20  |
+| Cycle         | 4/20  |
+| Episodes      | 1250  |
+| Timesteps     | 62500 |
+| TimeCost(sec) | 61.17 |
+| Pi_q_loss     | 2.962 |
+| Pi_l2_loss    | 0.145 |
+| Q_loss        | 0.183 |
+| Success       | 0.65  |
++---------------+-------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:27:49 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 5/20   |
+| Episodes      | 1300   |
+| Timesteps     | 65000  |
+| TimeCost(sec) | 64.261 |
+| Pi_q_loss     | 2.894  |
+| Pi_l2_loss    | 0.151  |
+| Q_loss        | 0.172  |
+| Success       | 0.57   |
++---------------+--------+
+2021-12-07 06:28:50 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 6/20   |
+| Episodes      | 1350   |
+| Timesteps     | 67500  |
+| TimeCost(sec) | 61.141 |
+| Pi_q_loss     | 2.759  |
+| Pi_l2_loss    | 0.15   |
+| Q_loss        | 0.177  |
+| Success       | 0.73   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:29:52 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 7/20   |
+| Episodes      | 1400   |
+| Timesteps     | 70000  |
+| TimeCost(sec) | 60.992 |
+| Pi_q_loss     | 2.733  |
+| Pi_l2_loss    | 0.151  |
+| Q_loss        | 0.188  |
+| Success       | 0.67   |
++---------------+--------+
+2021-12-07 06:30:53 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 8/20   |
+| Episodes      | 1450   |
+| Timesteps     | 72500  |
+| TimeCost(sec) | 61.473 |
+| Pi_q_loss     | 2.657  |
+| Pi_l2_loss    | 0.15   |
+| Q_loss        | 0.172  |
+| Success       | 0.7    |
++---------------+--------+
+2021-12-07 06:31:55 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 9/20   |
+| Episodes      | 1500   |
+| Timesteps     | 75000  |
+| TimeCost(sec) | 61.423 |
+| Pi_q_loss     | 2.611  |
+| Pi_l2_loss    | 0.148  |
+| Q_loss        | 0.181  |
+| Success       | 0.86   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:32:56 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 10/20  |
+| Episodes      | 1550   |
+| Timesteps     | 77500  |
+| TimeCost(sec) | 60.947 |
+| Pi_q_loss     | 2.583  |
+| Pi_l2_loss    | 0.148  |
+| Q_loss        | 0.183  |
+| Success       | 0.8    |
++---------------+--------+
+2021-12-07 06:33:56 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 11/20  |
+| Episodes      | 1600   |
+| Timesteps     | 80000  |
+| TimeCost(sec) | 59.203 |
+| Pi_q_loss     | 2.561  |
+| Pi_l2_loss    | 0.145  |
+| Q_loss        | 0.179  |
+| Success       | 0.81   |
++---------------+--------+
+2021-12-07 06:34:55 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 12/20  |
+| Episodes      | 1650   |
+| Timesteps     | 82500  |
+| TimeCost(sec) | 58.926 |
+| Pi_q_loss     | 2.521  |
+| Pi_l2_loss    | 0.146  |
+| Q_loss        | 0.174  |
+| Success       | 0.9    |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:35:54 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 13/20  |
+| Episodes      | 1700   |
+| Timesteps     | 85000  |
+| TimeCost(sec) | 59.413 |
+| Pi_q_loss     | 2.511  |
+| Pi_l2_loss    | 0.145  |
+| Q_loss        | 0.183  |
+| Success       | 0.81   |
++---------------+--------+
+2021-12-07 06:36:54 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 14/20  |
+| Episodes      | 1750   |
+| Timesteps     | 87500  |
+| TimeCost(sec) | 59.543 |
+| Pi_q_loss     | 2.506  |
+| Pi_l2_loss    | 0.145  |
+| Q_loss        | 0.169  |
+| Success       | 0.87   |
++---------------+--------+
+2021-12-07 06:37:53 000
++---------------+-------+
+| Epoch         | 1/20  |
+| Cycle         | 15/20 |
+| Episodes      | 1800  |
+| Timesteps     | 90000 |
+| TimeCost(sec) | 59.02 |
+| Pi_q_loss     | 2.503 |
+| Pi_l2_loss    | 0.145 |
+| Q_loss        | 0.176 |
+| Success       | 0.86  |
++---------------+-------+
+2021-12-07 06:38:53 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 16/20  |
+| Episodes      | 1850   |
+| Timesteps     | 92500  |
+| TimeCost(sec) | 59.188 |
+| Pi_q_loss     | 2.51   |
+| Pi_l2_loss    | 0.147  |
+| Q_loss        | 0.173  |
+| Success       | 0.84   |
++---------------+--------+
+2021-12-07 06:39:52 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 17/20  |
+| Episodes      | 1900   |
+| Timesteps     | 95000  |
+| TimeCost(sec) | 59.194 |
+| Pi_q_loss     | 2.487  |
+| Pi_l2_loss    | 0.145  |
+| Q_loss        | 0.171  |
+| Success       | 0.85   |
++---------------+--------+
+2021-12-07 06:40:51 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 18/20  |
+| Episodes      | 1950   |
+| Timesteps     | 97500  |
+| TimeCost(sec) | 58.546 |
+| Pi_q_loss     | 2.518  |
+| Pi_l2_loss    | 0.145  |
+| Q_loss        | 0.183  |
+| Success       | 0.86   |
++---------------+--------+
+2021-12-07 06:41:49 000
++---------------+--------+
+| Epoch         | 1/20   |
+| Cycle         | 19/20  |
+| Episodes      | 2000   |
+| Timesteps     | 100000 |
+| TimeCost(sec) | 58.281 |
+| Pi_q_loss     | 2.503  |
+| Pi_l2_loss    | 0.143  |
+| Q_loss        | 0.186  |
+| Success       | 0.86   |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:42:48 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 0/20   |
+| Episodes      | 2050   |
+| Timesteps     | 102500 |
+| TimeCost(sec) | 58.111 |
+| Pi_q_loss     | 2.491  |
+| Pi_l2_loss    | 0.143  |
+| Q_loss        | 0.184  |
+| Success       | 0.86   |
++---------------+--------+
+2021-12-07 06:43:46 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 1/20   |
+| Episodes      | 2100   |
+| Timesteps     | 105000 |
+| TimeCost(sec) | 58.481 |
+| Pi_q_loss     | 2.476  |
+| Pi_l2_loss    | 0.143  |
+| Q_loss        | 0.168  |
+| Success       | 0.89   |
++---------------+--------+
+2021-12-07 06:44:44 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 2/20   |
+| Episodes      | 2150   |
+| Timesteps     | 107500 |
+| TimeCost(sec) | 58.027 |
+| Pi_q_loss     | 2.433  |
+| Pi_l2_loss    | 0.143  |
+| Q_loss        | 0.167  |
+| Success       | 0.92   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:45:44 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 3/20   |
+| Episodes      | 2200   |
+| Timesteps     | 110000 |
+| TimeCost(sec) | 58.947 |
+| Pi_q_loss     | 2.371  |
+| Pi_l2_loss    | 0.143  |
+| Q_loss        | 0.171  |
+| Success       | 0.98   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 06:46:44 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 4/20   |
+| Episodes      | 2250   |
+| Timesteps     | 112500 |
+| TimeCost(sec) | 59.624 |
+| Pi_q_loss     | 2.351  |
+| Pi_l2_loss    | 0.143  |
+| Q_loss        | 0.166  |
+| Success       | 0.92   |
++---------------+--------+
+2021-12-07 06:47:42 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 5/20   |
+| Episodes      | 2300   |
+| Timesteps     | 115000 |
+| TimeCost(sec) | 58.338 |
+| Pi_q_loss     | 2.339  |
+| Pi_l2_loss    | 0.142  |
+| Q_loss        | 0.151  |
+| Success       | 0.87   |
++---------------+--------+
+2021-12-07 06:48:41 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 6/20   |
+| Episodes      | 2350   |
+| Timesteps     | 117500 |
+| TimeCost(sec) | 58.675 |
+| Pi_q_loss     | 2.372  |
+| Pi_l2_loss    | 0.14   |
+| Q_loss        | 0.163  |
+| Success       | 0.92   |
++---------------+--------+
+2021-12-07 06:49:40 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 7/20   |
+| Episodes      | 2400   |
+| Timesteps     | 120000 |
+| TimeCost(sec) | 59.03  |
+| Pi_q_loss     | 2.363  |
+| Pi_l2_loss    | 0.141  |
+| Q_loss        | 0.166  |
+| Success       | 0.96   |
++---------------+--------+
+2021-12-07 06:50:39 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 8/20   |
+| Episodes      | 2450   |
+| Timesteps     | 122500 |
+| TimeCost(sec) | 58.299 |
+| Pi_q_loss     | 2.347  |
+| Pi_l2_loss    | 0.14   |
+| Q_loss        | 0.164  |
+| Success       | 0.95   |
++---------------+--------+
+2021-12-07 06:51:37 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 9/20   |
+| Episodes      | 2500   |
+| Timesteps     | 125000 |
+| TimeCost(sec) | 58.372 |
+| Pi_q_loss     | 2.346  |
+| Pi_l2_loss    | 0.138  |
+| Q_loss        | 0.157  |
+| Success       | 0.94   |
++---------------+--------+
+2021-12-07 06:52:36 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 10/20  |
+| Episodes      | 2550   |
+| Timesteps     | 127500 |
+| TimeCost(sec) | 58.354 |
+| Pi_q_loss     | 2.351  |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.167  |
+| Success       | 0.94   |
++---------------+--------+
+2021-12-07 06:53:34 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 11/20  |
+| Episodes      | 2600   |
+| Timesteps     | 130000 |
+| TimeCost(sec) | 58.442 |
+| Pi_q_loss     | 2.357  |
+| Pi_l2_loss    | 0.137  |
+| Q_loss        | 0.161  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 06:54:33 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 12/20  |
+| Episodes      | 2650   |
+| Timesteps     | 132500 |
+| TimeCost(sec) | 58.795 |
+| Pi_q_loss     | 2.357  |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.167  |
+| Success       | 0.92   |
++---------------+--------+
+2021-12-07 06:55:32 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 13/20  |
+| Episodes      | 2700   |
+| Timesteps     | 135000 |
+| TimeCost(sec) | 58.392 |
+| Pi_q_loss     | 2.35   |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.166  |
+| Success       | 0.92   |
++---------------+--------+
+2021-12-07 06:56:30 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 14/20  |
+| Episodes      | 2750   |
+| Timesteps     | 137500 |
+| TimeCost(sec) | 58.358 |
+| Pi_q_loss     | 2.37   |
+| Pi_l2_loss    | 0.137  |
+| Q_loss        | 0.17   |
+| Success       | 0.96   |
++---------------+--------+
+2021-12-07 06:57:34 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 15/20  |
+| Episodes      | 2800   |
+| Timesteps     | 140000 |
+| TimeCost(sec) | 63.327 |
+| Pi_q_loss     | 2.358  |
+| Pi_l2_loss    | 0.137  |
+| Q_loss        | 0.174  |
+| Success       | 0.93   |
++---------------+--------+
+2021-12-07 06:58:35 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 16/20  |
+| Episodes      | 2850   |
+| Timesteps     | 142500 |
+| TimeCost(sec) | 61.426 |
+| Pi_q_loss     | 2.354  |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.166  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 06:59:36 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 17/20  |
+| Episodes      | 2900   |
+| Timesteps     | 145000 |
+| TimeCost(sec) | 60.272 |
+| Pi_q_loss     | 2.364  |
+| Pi_l2_loss    | 0.137  |
+| Q_loss        | 0.164  |
+| Success       | 0.92   |
++---------------+--------+
+2021-12-07 07:00:36 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 18/20  |
+| Episodes      | 2950   |
+| Timesteps     | 147500 |
+| TimeCost(sec) | 60.209 |
+| Pi_q_loss     | 2.374  |
+| Pi_l2_loss    | 0.138  |
+| Q_loss        | 0.158  |
+| Success       | 0.95   |
++---------------+--------+
+2021-12-07 07:01:37 000
++---------------+--------+
+| Epoch         | 2/20   |
+| Cycle         | 19/20  |
+| Episodes      | 3000   |
+| Timesteps     | 150000 |
+| TimeCost(sec) | 61.011 |
+| Pi_q_loss     | 2.35   |
+| Pi_l2_loss    | 0.137  |
+| Q_loss        | 0.165  |
+| Success       | 0.95   |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 07:02:40 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 0/20   |
+| Episodes      | 3050   |
+| Timesteps     | 152500 |
+| TimeCost(sec) | 61.994 |
+| Pi_q_loss     | 2.366  |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.172  |
+| Success       | 0.96   |
++---------------+--------+
+2021-12-07 07:03:42 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 1/20   |
+| Episodes      | 3100   |
+| Timesteps     | 155000 |
+| TimeCost(sec) | 61.952 |
+| Pi_q_loss     | 2.346  |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.167  |
+| Success       | 0.93   |
++---------------+--------+
+2021-12-07 07:04:45 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 2/20   |
+| Episodes      | 3150   |
+| Timesteps     | 157500 |
+| TimeCost(sec) | 62.717 |
+| Pi_q_loss     | 2.336  |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.169  |
+| Success       | 0.96   |
++---------------+--------+
+2021-12-07 07:05:48 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 3/20   |
+| Episodes      | 3200   |
+| Timesteps     | 160000 |
+| TimeCost(sec) | 63.558 |
+| Pi_q_loss     | 2.33   |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.158  |
+| Success       | 0.99   |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 07:06:53 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 4/20   |
+| Episodes      | 3250   |
+| Timesteps     | 162500 |
+| TimeCost(sec) | 63.816 |
+| Pi_q_loss     | 2.313  |
+| Pi_l2_loss    | 0.137  |
+| Q_loss        | 0.173  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 07:08:01 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 5/20   |
+| Episodes      | 3300   |
+| Timesteps     | 165000 |
+| TimeCost(sec) | 68.031 |
+| Pi_q_loss     | 2.311  |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.17   |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:09:07 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 6/20   |
+| Episodes      | 3350   |
+| Timesteps     | 167500 |
+| TimeCost(sec) | 65.812 |
+| Pi_q_loss     | 2.281  |
+| Pi_l2_loss    | 0.135  |
+| Q_loss        | 0.159  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 07:10:15 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 7/20   |
+| Episodes      | 3400   |
+| Timesteps     | 170000 |
+| TimeCost(sec) | 68.334 |
+| Pi_q_loss     | 2.291  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.16   |
+| Success       | 0.96   |
++---------------+--------+
+2021-12-07 07:11:24 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 8/20   |
+| Episodes      | 3450   |
+| Timesteps     | 172500 |
+| TimeCost(sec) | 68.612 |
+| Pi_q_loss     | 2.281  |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.161  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 07:12:30 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 9/20   |
+| Episodes      | 3500   |
+| Timesteps     | 175000 |
+| TimeCost(sec) | 65.5   |
+| Pi_q_loss     | 2.285  |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.159  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:13:32 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 10/20  |
+| Episodes      | 3550   |
+| Timesteps     | 177500 |
+| TimeCost(sec) | 61.962 |
+| Pi_q_loss     | 2.303  |
+| Pi_l2_loss    | 0.137  |
+| Q_loss        | 0.16   |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:14:34 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 11/20  |
+| Episodes      | 3600   |
+| Timesteps     | 180000 |
+| TimeCost(sec) | 62.005 |
+| Pi_q_loss     | 2.284  |
+| Pi_l2_loss    | 0.135  |
+| Q_loss        | 0.158  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:15:37 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 12/20  |
+| Episodes      | 3650   |
+| Timesteps     | 182500 |
+| TimeCost(sec) | 62.468 |
+| Pi_q_loss     | 2.28   |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.154  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:16:40 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 13/20  |
+| Episodes      | 3700   |
+| Timesteps     | 185000 |
+| TimeCost(sec) | 62.57  |
+| Pi_q_loss     | 2.272  |
+| Pi_l2_loss    | 0.135  |
+| Q_loss        | 0.151  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:17:42 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 14/20  |
+| Episodes      | 3750   |
+| Timesteps     | 187500 |
+| TimeCost(sec) | 62.195 |
+| Pi_q_loss     | 2.286  |
+| Pi_l2_loss    | 0.135  |
+| Q_loss        | 0.16   |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:18:45 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 15/20  |
+| Episodes      | 3800   |
+| Timesteps     | 190000 |
+| TimeCost(sec) | 63.392 |
+| Pi_q_loss     | 2.258  |
+| Pi_l2_loss    | 0.135  |
+| Q_loss        | 0.151  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:19:47 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 16/20  |
+| Episodes      | 3850   |
+| Timesteps     | 192500 |
+| TimeCost(sec) | 61.351 |
+| Pi_q_loss     | 2.256  |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.158  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:20:49 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 17/20  |
+| Episodes      | 3900   |
+| Timesteps     | 195000 |
+| TimeCost(sec) | 61.896 |
+| Pi_q_loss     | 2.248  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.156  |
+| Success       | 0.94   |
++---------------+--------+
+2021-12-07 07:21:50 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 18/20  |
+| Episodes      | 3950   |
+| Timesteps     | 197500 |
+| TimeCost(sec) | 60.91  |
+| Pi_q_loss     | 2.251  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.162  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:22:51 000
++---------------+--------+
+| Epoch         | 3/20   |
+| Cycle         | 19/20  |
+| Episodes      | 4000   |
+| Timesteps     | 200000 |
+| TimeCost(sec) | 60.471 |
+| Pi_q_loss     | 2.225  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.167  |
+| Success       | 0.94   |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 07:23:52 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 0/20   |
+| Episodes      | 4050   |
+| Timesteps     | 202500 |
+| TimeCost(sec) | 61.073 |
+| Pi_q_loss     | 2.223  |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.159  |
+| Success       | 1.0    |
++---------------+--------+
+Saved as best policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 07:24:53 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 1/20   |
+| Episodes      | 4100   |
+| Timesteps     | 205000 |
+| TimeCost(sec) | 60.047 |
+| Pi_q_loss     | 2.232  |
+| Pi_l2_loss    | 0.135  |
+| Q_loss        | 0.162  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:25:51 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 2/20   |
+| Episodes      | 4150   |
+| Timesteps     | 207500 |
+| TimeCost(sec) | 58.584 |
+| Pi_q_loss     | 2.219  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.163  |
+| Success       | 0.95   |
++---------------+--------+
+2021-12-07 07:26:50 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 3/20   |
+| Episodes      | 4200   |
+| Timesteps     | 210000 |
+| TimeCost(sec) | 58.341 |
+| Pi_q_loss     | 2.242  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.171  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:27:50 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 4/20   |
+| Episodes      | 4250   |
+| Timesteps     | 212500 |
+| TimeCost(sec) | 60.156 |
+| Pi_q_loss     | 2.237  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.155  |
+| Success       | 0.96   |
++---------------+--------+
+2021-12-07 07:28:51 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 5/20   |
+| Episodes      | 4300   |
+| Timesteps     | 215000 |
+| TimeCost(sec) | 60.746 |
+| Pi_q_loss     | 2.253  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.152  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 07:29:52 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 6/20   |
+| Episodes      | 4350   |
+| Timesteps     | 217500 |
+| TimeCost(sec) | 60.184 |
+| Pi_q_loss     | 2.228  |
+| Pi_l2_loss    | 0.136  |
+| Q_loss        | 0.152  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:30:52 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 7/20   |
+| Episodes      | 4400   |
+| Timesteps     | 220000 |
+| TimeCost(sec) | 60.495 |
+| Pi_q_loss     | 2.221  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.158  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:31:52 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 8/20   |
+| Episodes      | 4450   |
+| Timesteps     | 222500 |
+| TimeCost(sec) | 60.003 |
+| Pi_q_loss     | 2.219  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.163  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 07:32:53 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 9/20   |
+| Episodes      | 4500   |
+| Timesteps     | 225000 |
+| TimeCost(sec) | 60.866 |
+| Pi_q_loss     | 2.204  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.153  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:33:54 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 10/20  |
+| Episodes      | 4550   |
+| Timesteps     | 227500 |
+| TimeCost(sec) | 60.005 |
+| Pi_q_loss     | 2.212  |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.147  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:34:54 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 11/20  |
+| Episodes      | 4600   |
+| Timesteps     | 230000 |
+| TimeCost(sec) | 60.416 |
+| Pi_q_loss     | 2.226  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.16   |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 07:35:55 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 12/20  |
+| Episodes      | 4650   |
+| Timesteps     | 232500 |
+| TimeCost(sec) | 60.469 |
+| Pi_q_loss     | 2.231  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.155  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:36:55 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 13/20  |
+| Episodes      | 4700   |
+| Timesteps     | 235000 |
+| TimeCost(sec) | 60.365 |
+| Pi_q_loss     | 2.227  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.157  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 07:37:56 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 14/20  |
+| Episodes      | 4750   |
+| Timesteps     | 237500 |
+| TimeCost(sec) | 60.283 |
+| Pi_q_loss     | 2.217  |
+| Pi_l2_loss    | 0.135  |
+| Q_loss        | 0.156  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 07:38:57 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 15/20  |
+| Episodes      | 4800   |
+| Timesteps     | 240000 |
+| TimeCost(sec) | 60.859 |
+| Pi_q_loss     | 2.218  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.155  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:39:57 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 16/20  |
+| Episodes      | 4850   |
+| Timesteps     | 242500 |
+| TimeCost(sec) | 59.908 |
+| Pi_q_loss     | 2.232  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.151  |
+| Success       | 0.96   |
++---------------+--------+
+2021-12-07 07:40:56 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 17/20  |
+| Episodes      | 4900   |
+| Timesteps     | 245000 |
+| TimeCost(sec) | 59.341 |
+| Pi_q_loss     | 2.202  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.145  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:41:56 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 18/20  |
+| Episodes      | 4950   |
+| Timesteps     | 247500 |
+| TimeCost(sec) | 59.542 |
+| Pi_q_loss     | 2.198  |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.152  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:42:56 000
++---------------+--------+
+| Epoch         | 4/20   |
+| Cycle         | 19/20  |
+| Episodes      | 5000   |
+| Timesteps     | 250000 |
+| TimeCost(sec) | 59.647 |
+| Pi_q_loss     | 2.182  |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.153  |
+| Success       | 0.96   |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 07:43:56 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 0/20   |
+| Episodes      | 5050   |
+| Timesteps     | 252500 |
+| TimeCost(sec) | 59.714 |
+| Pi_q_loss     | 2.174  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.149  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:44:56 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 1/20   |
+| Episodes      | 5100   |
+| Timesteps     | 255000 |
+| TimeCost(sec) | 59.531 |
+| Pi_q_loss     | 2.191  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.145  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 07:45:55 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 2/20   |
+| Episodes      | 5150   |
+| Timesteps     | 257500 |
+| TimeCost(sec) | 59.368 |
+| Pi_q_loss     | 2.198  |
+| Pi_l2_loss    | 0.134  |
+| Q_loss        | 0.141  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:46:55 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 3/20   |
+| Episodes      | 5200   |
+| Timesteps     | 260000 |
+| TimeCost(sec) | 59.563 |
+| Pi_q_loss     | 2.19   |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.14   |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 07:47:55 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 4/20   |
+| Episodes      | 5250   |
+| Timesteps     | 262500 |
+| TimeCost(sec) | 60.116 |
+| Pi_q_loss     | 2.197  |
+| Pi_l2_loss    | 0.135  |
+| Q_loss        | 0.147  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:48:55 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 5/20   |
+| Episodes      | 5300   |
+| Timesteps     | 265000 |
+| TimeCost(sec) | 59.573 |
+| Pi_q_loss     | 2.193  |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.145  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:49:54 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 6/20   |
+| Episodes      | 5350   |
+| Timesteps     | 267500 |
+| TimeCost(sec) | 59.161 |
+| Pi_q_loss     | 2.183  |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.146  |
+| Success       | 0.94   |
++---------------+--------+
+2021-12-07 07:50:53 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 7/20   |
+| Episodes      | 5400   |
+| Timesteps     | 270000 |
+| TimeCost(sec) | 58.697 |
+| Pi_q_loss     | 2.168  |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.147  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 07:51:52 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 8/20   |
+| Episodes      | 5450   |
+| Timesteps     | 272500 |
+| TimeCost(sec) | 58.964 |
+| Pi_q_loss     | 2.167  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.151  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 07:52:52 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 9/20   |
+| Episodes      | 5500   |
+| Timesteps     | 275000 |
+| TimeCost(sec) | 59.157 |
+| Pi_q_loss     | 2.151  |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.143  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:53:51 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 10/20  |
+| Episodes      | 5550   |
+| Timesteps     | 277500 |
+| TimeCost(sec) | 59.616 |
+| Pi_q_loss     | 2.155  |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.137  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 07:54:50 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 11/20  |
+| Episodes      | 5600   |
+| Timesteps     | 280000 |
+| TimeCost(sec) | 59.014 |
+| Pi_q_loss     | 2.136  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.142  |
+| Success       | 0.96   |
++---------------+--------+
+2021-12-07 07:55:50 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 12/20  |
+| Episodes      | 5650   |
+| Timesteps     | 282500 |
+| TimeCost(sec) | 59.275 |
+| Pi_q_loss     | 2.141  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.149  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 07:56:50 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 13/20  |
+| Episodes      | 5700   |
+| Timesteps     | 285000 |
+| TimeCost(sec) | 59.961 |
+| Pi_q_loss     | 2.163  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.148  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 07:57:49 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 14/20  |
+| Episodes      | 5750   |
+| Timesteps     | 287500 |
+| TimeCost(sec) | 58.447 |
+| Pi_q_loss     | 2.168  |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.151  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:58:48 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 15/20  |
+| Episodes      | 5800   |
+| Timesteps     | 290000 |
+| TimeCost(sec) | 59.147 |
+| Pi_q_loss     | 2.148  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.141  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 07:59:48 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 16/20  |
+| Episodes      | 5850   |
+| Timesteps     | 292500 |
+| TimeCost(sec) | 59.587 |
+| Pi_q_loss     | 2.158  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.147  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 08:00:48 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 17/20  |
+| Episodes      | 5900   |
+| Timesteps     | 295000 |
+| TimeCost(sec) | 60.054 |
+| Pi_q_loss     | 2.14   |
+| Pi_l2_loss    | 0.133  |
+| Q_loss        | 0.142  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 08:01:48 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 18/20  |
+| Episodes      | 5950   |
+| Timesteps     | 297500 |
+| TimeCost(sec) | 60.345 |
+| Pi_q_loss     | 2.122  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.145  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:02:48 000
++---------------+--------+
+| Epoch         | 5/20   |
+| Cycle         | 19/20  |
+| Episodes      | 6000   |
+| Timesteps     | 300000 |
+| TimeCost(sec) | 59.66  |
+| Pi_q_loss     | 2.122  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.147  |
+| Success       | 0.98   |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 08:03:50 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 0/20   |
+| Episodes      | 6050   |
+| Timesteps     | 302500 |
+| TimeCost(sec) | 61.15  |
+| Pi_q_loss     | 2.101  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.136  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:04:51 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 1/20   |
+| Episodes      | 6100   |
+| Timesteps     | 305000 |
+| TimeCost(sec) | 60.705 |
+| Pi_q_loss     | 2.108  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.146  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:05:52 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 2/20   |
+| Episodes      | 6150   |
+| Timesteps     | 307500 |
+| TimeCost(sec) | 61.451 |
+| Pi_q_loss     | 2.111  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.135  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:06:53 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 3/20   |
+| Episodes      | 6200   |
+| Timesteps     | 310000 |
+| TimeCost(sec) | 60.491 |
+| Pi_q_loss     | 2.092  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.135  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:07:54 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 4/20   |
+| Episodes      | 6250   |
+| Timesteps     | 312500 |
+| TimeCost(sec) | 60.693 |
+| Pi_q_loss     | 2.104  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.147  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:08:54 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 5/20   |
+| Episodes      | 6300   |
+| Timesteps     | 315000 |
+| TimeCost(sec) | 60.144 |
+| Pi_q_loss     | 2.093  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.142  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:09:54 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 6/20   |
+| Episodes      | 6350   |
+| Timesteps     | 317500 |
+| TimeCost(sec) | 59.796 |
+| Pi_q_loss     | 2.092  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.152  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 08:10:54 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 7/20   |
+| Episodes      | 6400   |
+| Timesteps     | 320000 |
+| TimeCost(sec) | 59.452 |
+| Pi_q_loss     | 2.101  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.148  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:11:54 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 8/20   |
+| Episodes      | 6450   |
+| Timesteps     | 322500 |
+| TimeCost(sec) | 60.314 |
+| Pi_q_loss     | 2.127  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.138  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:12:55 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 9/20   |
+| Episodes      | 6500   |
+| Timesteps     | 325000 |
+| TimeCost(sec) | 60.493 |
+| Pi_q_loss     | 2.118  |
+| Pi_l2_loss    | 0.132  |
+| Q_loss        | 0.134  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:13:55 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 10/20  |
+| Episodes      | 6550   |
+| Timesteps     | 327500 |
+| TimeCost(sec) | 59.646 |
+| Pi_q_loss     | 2.084  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.137  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:14:55 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 11/20  |
+| Episodes      | 6600   |
+| Timesteps     | 330000 |
+| TimeCost(sec) | 60.014 |
+| Pi_q_loss     | 2.081  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.131  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 08:15:55 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 12/20  |
+| Episodes      | 6650   |
+| Timesteps     | 332500 |
+| TimeCost(sec) | 60.534 |
+| Pi_q_loss     | 2.08   |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.127  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:16:56 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 13/20  |
+| Episodes      | 6700   |
+| Timesteps     | 335000 |
+| TimeCost(sec) | 60.563 |
+| Pi_q_loss     | 2.078  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.132  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 08:17:56 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 14/20  |
+| Episodes      | 6750   |
+| Timesteps     | 337500 |
+| TimeCost(sec) | 60.173 |
+| Pi_q_loss     | 2.078  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.129  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:18:57 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 15/20  |
+| Episodes      | 6800   |
+| Timesteps     | 340000 |
+| TimeCost(sec) | 60.188 |
+| Pi_q_loss     | 2.082  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.13   |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 08:19:57 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 16/20  |
+| Episodes      | 6850   |
+| Timesteps     | 342500 |
+| TimeCost(sec) | 59.852 |
+| Pi_q_loss     | 2.089  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.129  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:20:58 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 17/20  |
+| Episodes      | 6900   |
+| Timesteps     | 345000 |
+| TimeCost(sec) | 60.982 |
+| Pi_q_loss     | 2.082  |
+| Pi_l2_loss    | 0.131  |
+| Q_loss        | 0.126  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:22:00 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 18/20  |
+| Episodes      | 6950   |
+| Timesteps     | 347500 |
+| TimeCost(sec) | 61.904 |
+| Pi_q_loss     | 2.079  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.13   |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:23:01 000
++---------------+--------+
+| Epoch         | 6/20   |
+| Cycle         | 19/20  |
+| Episodes      | 7000   |
+| Timesteps     | 350000 |
+| TimeCost(sec) | 60.426 |
+| Pi_q_loss     | 2.095  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.127  |
+| Success       | 0.99   |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 08:24:01 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 0/20   |
+| Episodes      | 7050   |
+| Timesteps     | 352500 |
+| TimeCost(sec) | 60.125 |
+| Pi_q_loss     | 2.104  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.128  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:25:01 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 1/20   |
+| Episodes      | 7100   |
+| Timesteps     | 355000 |
+| TimeCost(sec) | 59.153 |
+| Pi_q_loss     | 2.099  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.126  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:26:00 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 2/20   |
+| Episodes      | 7150   |
+| Timesteps     | 357500 |
+| TimeCost(sec) | 59.164 |
+| Pi_q_loss     | 2.1    |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.13   |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:26:59 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 3/20   |
+| Episodes      | 7200   |
+| Timesteps     | 360000 |
+| TimeCost(sec) | 58.671 |
+| Pi_q_loss     | 2.09   |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.128  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:27:58 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 4/20   |
+| Episodes      | 7250   |
+| Timesteps     | 362500 |
+| TimeCost(sec) | 58.839 |
+| Pi_q_loss     | 2.092  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.126  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:28:57 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 5/20   |
+| Episodes      | 7300   |
+| Timesteps     | 365000 |
+| TimeCost(sec) | 58.845 |
+| Pi_q_loss     | 2.099  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.127  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:29:55 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 6/20   |
+| Episodes      | 7350   |
+| Timesteps     | 367500 |
+| TimeCost(sec) | 58.636 |
+| Pi_q_loss     | 2.102  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.137  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:30:55 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 7/20   |
+| Episodes      | 7400   |
+| Timesteps     | 370000 |
+| TimeCost(sec) | 59.273 |
+| Pi_q_loss     | 2.108  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.134  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:31:54 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 8/20   |
+| Episodes      | 7450   |
+| Timesteps     | 372500 |
+| TimeCost(sec) | 58.73  |
+| Pi_q_loss     | 2.12   |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.13   |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:32:53 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 9/20   |
+| Episodes      | 7500   |
+| Timesteps     | 375000 |
+| TimeCost(sec) | 58.587 |
+| Pi_q_loss     | 2.118  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.133  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:33:52 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 10/20  |
+| Episodes      | 7550   |
+| Timesteps     | 377500 |
+| TimeCost(sec) | 59.458 |
+| Pi_q_loss     | 2.12   |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.133  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:34:52 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 11/20  |
+| Episodes      | 7600   |
+| Timesteps     | 380000 |
+| TimeCost(sec) | 59.731 |
+| Pi_q_loss     | 2.118  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.132  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 08:35:52 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 12/20  |
+| Episodes      | 7650   |
+| Timesteps     | 382500 |
+| TimeCost(sec) | 59.749 |
+| Pi_q_loss     | 2.142  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.135  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:36:52 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 13/20  |
+| Episodes      | 7700   |
+| Timesteps     | 385000 |
+| TimeCost(sec) | 59.561 |
+| Pi_q_loss     | 2.142  |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.131  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:37:50 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 14/20  |
+| Episodes      | 7750   |
+| Timesteps     | 387500 |
+| TimeCost(sec) | 58.676 |
+| Pi_q_loss     | 2.124  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.137  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 08:38:50 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 15/20  |
+| Episodes      | 7800   |
+| Timesteps     | 390000 |
+| TimeCost(sec) | 58.967 |
+| Pi_q_loss     | 2.136  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.127  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 08:39:50 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 16/20  |
+| Episodes      | 7850   |
+| Timesteps     | 392500 |
+| TimeCost(sec) | 59.942 |
+| Pi_q_loss     | 2.133  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.134  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:40:49 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 17/20  |
+| Episodes      | 7900   |
+| Timesteps     | 395000 |
+| TimeCost(sec) | 59.515 |
+| Pi_q_loss     | 2.109  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.136  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:41:49 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 18/20  |
+| Episodes      | 7950   |
+| Timesteps     | 397500 |
+| TimeCost(sec) | 59.313 |
+| Pi_q_loss     | 2.112  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.141  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:42:49 000
++---------------+--------+
+| Epoch         | 7/20   |
+| Cycle         | 19/20  |
+| Episodes      | 8000   |
+| Timesteps     | 400000 |
+| TimeCost(sec) | 59.819 |
+| Pi_q_loss     | 2.126  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.136  |
+| Success       | 0.99   |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 08:43:49 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 0/20   |
+| Episodes      | 8050   |
+| Timesteps     | 402500 |
+| TimeCost(sec) | 59.523 |
+| Pi_q_loss     | 2.099  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.133  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:44:48 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 1/20   |
+| Episodes      | 8100   |
+| Timesteps     | 405000 |
+| TimeCost(sec) | 59.562 |
+| Pi_q_loss     | 2.11   |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.131  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:45:48 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 2/20   |
+| Episodes      | 8150   |
+| Timesteps     | 407500 |
+| TimeCost(sec) | 59.038 |
+| Pi_q_loss     | 2.089  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.129  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 08:46:47 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 3/20   |
+| Episodes      | 8200   |
+| Timesteps     | 410000 |
+| TimeCost(sec) | 59.387 |
+| Pi_q_loss     | 2.086  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.126  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:47:46 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 4/20   |
+| Episodes      | 8250   |
+| Timesteps     | 412500 |
+| TimeCost(sec) | 58.838 |
+| Pi_q_loss     | 2.067  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.134  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:48:45 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 5/20   |
+| Episodes      | 8300   |
+| Timesteps     | 415000 |
+| TimeCost(sec) | 58.837 |
+| Pi_q_loss     | 2.052  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.133  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:49:44 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 6/20   |
+| Episodes      | 8350   |
+| Timesteps     | 417500 |
+| TimeCost(sec) | 58.943 |
+| Pi_q_loss     | 2.076  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.13   |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:50:44 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 7/20   |
+| Episodes      | 8400   |
+| Timesteps     | 420000 |
+| TimeCost(sec) | 59.565 |
+| Pi_q_loss     | 2.077  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.131  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:51:43 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 8/20   |
+| Episodes      | 8450   |
+| Timesteps     | 422500 |
+| TimeCost(sec) | 58.713 |
+| Pi_q_loss     | 2.081  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.133  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:52:41 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 9/20   |
+| Episodes      | 8500   |
+| Timesteps     | 425000 |
+| TimeCost(sec) | 58.202 |
+| Pi_q_loss     | 2.07   |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.13   |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:53:40 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 10/20  |
+| Episodes      | 8550   |
+| Timesteps     | 427500 |
+| TimeCost(sec) | 58.235 |
+| Pi_q_loss     | 2.059  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.127  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 08:54:39 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 11/20  |
+| Episodes      | 8600   |
+| Timesteps     | 430000 |
+| TimeCost(sec) | 58.828 |
+| Pi_q_loss     | 2.077  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.134  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:55:38 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 12/20  |
+| Episodes      | 8650   |
+| Timesteps     | 432500 |
+| TimeCost(sec) | 59.393 |
+| Pi_q_loss     | 2.068  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.134  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 08:56:38 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 13/20  |
+| Episodes      | 8700   |
+| Timesteps     | 435000 |
+| TimeCost(sec) | 59.34  |
+| Pi_q_loss     | 2.067  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.132  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:57:37 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 14/20  |
+| Episodes      | 8750   |
+| Timesteps     | 437500 |
+| TimeCost(sec) | 59.233 |
+| Pi_q_loss     | 2.049  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.131  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 08:58:37 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 15/20  |
+| Episodes      | 8800   |
+| Timesteps     | 440000 |
+| TimeCost(sec) | 59.809 |
+| Pi_q_loss     | 2.051  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.132  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 08:59:36 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 16/20  |
+| Episodes      | 8850   |
+| Timesteps     | 442500 |
+| TimeCost(sec) | 59.237 |
+| Pi_q_loss     | 2.064  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.129  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:00:36 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 17/20  |
+| Episodes      | 8900   |
+| Timesteps     | 445000 |
+| TimeCost(sec) | 59.829 |
+| Pi_q_loss     | 2.066  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.133  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:01:36 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 18/20  |
+| Episodes      | 8950   |
+| Timesteps     | 447500 |
+| TimeCost(sec) | 59.444 |
+| Pi_q_loss     | 2.046  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.129  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 09:02:36 000
++---------------+--------+
+| Epoch         | 8/20   |
+| Cycle         | 19/20  |
+| Episodes      | 9000   |
+| Timesteps     | 450000 |
+| TimeCost(sec) | 59.364 |
+| Pi_q_loss     | 2.073  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.134  |
+| Success       | 0.99   |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 09:03:36 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 0/20   |
+| Episodes      | 9050   |
+| Timesteps     | 452500 |
+| TimeCost(sec) | 59.693 |
+| Pi_q_loss     | 2.073  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.139  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:04:36 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 1/20   |
+| Episodes      | 9100   |
+| Timesteps     | 455000 |
+| TimeCost(sec) | 59.762 |
+| Pi_q_loss     | 2.06   |
+| Pi_l2_loss    | 0.13   |
+| Q_loss        | 0.14   |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:05:36 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 2/20   |
+| Episodes      | 9150   |
+| Timesteps     | 457500 |
+| TimeCost(sec) | 60.572 |
+| Pi_q_loss     | 2.066  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.142  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:06:36 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 3/20   |
+| Episodes      | 9200   |
+| Timesteps     | 460000 |
+| TimeCost(sec) | 59.994 |
+| Pi_q_loss     | 2.082  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.141  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:07:36 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 4/20   |
+| Episodes      | 9250   |
+| Timesteps     | 462500 |
+| TimeCost(sec) | 59.476 |
+| Pi_q_loss     | 2.097  |
+| Pi_l2_loss    | 0.129  |
+| Q_loss        | 0.139  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:08:36 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 5/20   |
+| Episodes      | 9300   |
+| Timesteps     | 465000 |
+| TimeCost(sec) | 59.759 |
+| Pi_q_loss     | 2.117  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.131  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:09:35 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 6/20   |
+| Episodes      | 9350   |
+| Timesteps     | 467500 |
+| TimeCost(sec) | 59.184 |
+| Pi_q_loss     | 2.106  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.142  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:10:35 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 7/20   |
+| Episodes      | 9400   |
+| Timesteps     | 470000 |
+| TimeCost(sec) | 59.53  |
+| Pi_q_loss     | 2.096  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.139  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:11:33 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 8/20   |
+| Episodes      | 9450   |
+| Timesteps     | 472500 |
+| TimeCost(sec) | 58.327 |
+| Pi_q_loss     | 2.079  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.152  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:12:33 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 9/20   |
+| Episodes      | 9500   |
+| Timesteps     | 475000 |
+| TimeCost(sec) | 58.897 |
+| Pi_q_loss     | 2.072  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.143  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:13:32 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 10/20  |
+| Episodes      | 9550   |
+| Timesteps     | 477500 |
+| TimeCost(sec) | 59.093 |
+| Pi_q_loss     | 2.082  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.143  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:14:31 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 11/20  |
+| Episodes      | 9600   |
+| Timesteps     | 480000 |
+| TimeCost(sec) | 58.905 |
+| Pi_q_loss     | 2.067  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.139  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 09:15:31 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 12/20  |
+| Episodes      | 9650   |
+| Timesteps     | 482500 |
+| TimeCost(sec) | 59.532 |
+| Pi_q_loss     | 2.066  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.145  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:16:30 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 13/20  |
+| Episodes      | 9700   |
+| Timesteps     | 485000 |
+| TimeCost(sec) | 58.93  |
+| Pi_q_loss     | 2.049  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.144  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 09:17:28 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 14/20  |
+| Episodes      | 9750   |
+| Timesteps     | 487500 |
+| TimeCost(sec) | 58.436 |
+| Pi_q_loss     | 2.069  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.151  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:18:27 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 15/20  |
+| Episodes      | 9800   |
+| Timesteps     | 490000 |
+| TimeCost(sec) | 58.961 |
+| Pi_q_loss     | 2.067  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.141  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:19:27 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 16/20  |
+| Episodes      | 9850   |
+| Timesteps     | 492500 |
+| TimeCost(sec) | 59.142 |
+| Pi_q_loss     | 2.065  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.14   |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:20:26 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 17/20  |
+| Episodes      | 9900   |
+| Timesteps     | 495000 |
+| TimeCost(sec) | 58.956 |
+| Pi_q_loss     | 2.069  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.154  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 09:21:25 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 18/20  |
+| Episodes      | 9950   |
+| Timesteps     | 497500 |
+| TimeCost(sec) | 58.809 |
+| Pi_q_loss     | 2.07   |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.148  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:22:24 000
++---------------+--------+
+| Epoch         | 9/20   |
+| Cycle         | 19/20  |
+| Episodes      | 10000  |
+| Timesteps     | 500000 |
+| TimeCost(sec) | 58.803 |
+| Pi_q_loss     | 2.064  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.135  |
+| Success       | 1.0    |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 09:23:23 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 0/20   |
+| Episodes      | 10050  |
+| Timesteps     | 502500 |
+| TimeCost(sec) | 59.484 |
+| Pi_q_loss     | 2.067  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.139  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:24:23 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 1/20   |
+| Episodes      | 10100  |
+| Timesteps     | 505000 |
+| TimeCost(sec) | 59.501 |
+| Pi_q_loss     | 2.087  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.145  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:25:24 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 2/20   |
+| Episodes      | 10150  |
+| Timesteps     | 507500 |
+| TimeCost(sec) | 60.293 |
+| Pi_q_loss     | 2.103  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.143  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:26:24 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 3/20   |
+| Episodes      | 10200  |
+| Timesteps     | 510000 |
+| TimeCost(sec) | 59.9   |
+| Pi_q_loss     | 2.111  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.139  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:27:24 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 4/20   |
+| Episodes      | 10250  |
+| Timesteps     | 512500 |
+| TimeCost(sec) | 59.75  |
+| Pi_q_loss     | 2.109  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.144  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:28:23 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 5/20   |
+| Episodes      | 10300  |
+| Timesteps     | 515000 |
+| TimeCost(sec) | 59.511 |
+| Pi_q_loss     | 2.102  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.15   |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:29:23 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 6/20   |
+| Episodes      | 10350  |
+| Timesteps     | 517500 |
+| TimeCost(sec) | 59.315 |
+| Pi_q_loss     | 2.092  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.153  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:30:22 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 7/20   |
+| Episodes      | 10400  |
+| Timesteps     | 520000 |
+| TimeCost(sec) | 59.401 |
+| Pi_q_loss     | 2.071  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.145  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:31:22 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 8/20   |
+| Episodes      | 10450  |
+| Timesteps     | 522500 |
+| TimeCost(sec) | 59.289 |
+| Pi_q_loss     | 2.065  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.153  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:32:21 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 9/20   |
+| Episodes      | 10500  |
+| Timesteps     | 525000 |
+| TimeCost(sec) | 59.37  |
+| Pi_q_loss     | 2.073  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.16   |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:33:21 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 10/20  |
+| Episodes      | 10550  |
+| Timesteps     | 527500 |
+| TimeCost(sec) | 59.548 |
+| Pi_q_loss     | 2.065  |
+| Pi_l2_loss    | 0.124  |
+| Q_loss        | 0.157  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:34:21 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 11/20  |
+| Episodes      | 10600  |
+| Timesteps     | 530000 |
+| TimeCost(sec) | 59.817 |
+| Pi_q_loss     | 2.112  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.145  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:35:21 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 12/20  |
+| Episodes      | 10650  |
+| Timesteps     | 532500 |
+| TimeCost(sec) | 59.852 |
+| Pi_q_loss     | 2.118  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.144  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:36:21 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 13/20  |
+| Episodes      | 10700  |
+| Timesteps     | 535000 |
+| TimeCost(sec) | 60.046 |
+| Pi_q_loss     | 2.158  |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.144  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:37:23 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 14/20  |
+| Episodes      | 10750  |
+| Timesteps     | 537500 |
+| TimeCost(sec) | 61.421 |
+| Pi_q_loss     | 2.184  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.154  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:38:23 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 15/20  |
+| Episodes      | 10800  |
+| Timesteps     | 540000 |
+| TimeCost(sec) | 60.106 |
+| Pi_q_loss     | 2.208  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.151  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:39:24 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 16/20  |
+| Episodes      | 10850  |
+| Timesteps     | 542500 |
+| TimeCost(sec) | 60.787 |
+| Pi_q_loss     | 2.19   |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.162  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:40:23 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 17/20  |
+| Episodes      | 10900  |
+| Timesteps     | 545000 |
+| TimeCost(sec) | 58.776 |
+| Pi_q_loss     | 2.184  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.156  |
+| Success       | 0.96   |
++---------------+--------+
+2021-12-07 09:41:22 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 18/20  |
+| Episodes      | 10950  |
+| Timesteps     | 547500 |
+| TimeCost(sec) | 59.03  |
+| Pi_q_loss     | 2.169  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.159  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:42:21 000
++---------------+--------+
+| Epoch         | 10/20  |
+| Cycle         | 19/20  |
+| Episodes      | 11000  |
+| Timesteps     | 550000 |
+| TimeCost(sec) | 59.144 |
+| Pi_q_loss     | 2.141  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.15   |
+| Success       | 1.0    |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 09:43:21 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 0/20   |
+| Episodes      | 11050  |
+| Timesteps     | 552500 |
+| TimeCost(sec) | 59.237 |
+| Pi_q_loss     | 2.129  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.156  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 09:44:20 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 1/20   |
+| Episodes      | 11100  |
+| Timesteps     | 555000 |
+| TimeCost(sec) | 59.234 |
+| Pi_q_loss     | 2.142  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.15   |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 09:45:21 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 2/20   |
+| Episodes      | 11150  |
+| Timesteps     | 557500 |
+| TimeCost(sec) | 59.941 |
+| Pi_q_loss     | 2.14   |
+| Pi_l2_loss    | 0.127  |
+| Q_loss        | 0.148  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:46:21 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 3/20   |
+| Episodes      | 11200  |
+| Timesteps     | 560000 |
+| TimeCost(sec) | 60.144 |
+| Pi_q_loss     | 2.147  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.157  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:47:21 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 4/20   |
+| Episodes      | 11250  |
+| Timesteps     | 562500 |
+| TimeCost(sec) | 60.217 |
+| Pi_q_loss     | 2.134  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.158  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:48:23 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 5/20   |
+| Episodes      | 11300  |
+| Timesteps     | 565000 |
+| TimeCost(sec) | 61.376 |
+| Pi_q_loss     | 2.148  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.156  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 09:49:23 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 6/20   |
+| Episodes      | 11350  |
+| Timesteps     | 567500 |
+| TimeCost(sec) | 59.941 |
+| Pi_q_loss     | 2.13   |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.162  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:50:23 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 7/20   |
+| Episodes      | 11400  |
+| Timesteps     | 570000 |
+| TimeCost(sec) | 60.217 |
+| Pi_q_loss     | 2.125  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.154  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 09:51:23 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 8/20   |
+| Episodes      | 11450  |
+| Timesteps     | 572500 |
+| TimeCost(sec) | 59.277 |
+| Pi_q_loss     | 2.108  |
+| Pi_l2_loss    | 0.126  |
+| Q_loss        | 0.159  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 09:52:25 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 9/20   |
+| Episodes      | 11500  |
+| Timesteps     | 575000 |
+| TimeCost(sec) | 62.286 |
+| Pi_q_loss     | 2.088  |
+| Pi_l2_loss    | 0.128  |
+| Q_loss        | 0.165  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:53:26 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 10/20  |
+| Episodes      | 11550  |
+| Timesteps     | 577500 |
+| TimeCost(sec) | 60.431 |
+| Pi_q_loss     | 2.092  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.159  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:54:26 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 11/20  |
+| Episodes      | 11600  |
+| Timesteps     | 580000 |
+| TimeCost(sec) | 59.753 |
+| Pi_q_loss     | 2.1    |
+| Pi_l2_loss    | 0.124  |
+| Q_loss        | 0.145  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:55:26 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 12/20  |
+| Episodes      | 11650  |
+| Timesteps     | 582500 |
+| TimeCost(sec) | 59.633 |
+| Pi_q_loss     | 2.097  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.154  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:56:26 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 13/20  |
+| Episodes      | 11700  |
+| Timesteps     | 585000 |
+| TimeCost(sec) | 59.965 |
+| Pi_q_loss     | 2.085  |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.148  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:57:26 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 14/20  |
+| Episodes      | 11750  |
+| Timesteps     | 587500 |
+| TimeCost(sec) | 59.627 |
+| Pi_q_loss     | 2.102  |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.157  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 09:58:25 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 15/20  |
+| Episodes      | 11800  |
+| Timesteps     | 590000 |
+| TimeCost(sec) | 59.534 |
+| Pi_q_loss     | 2.083  |
+| Pi_l2_loss    | 0.124  |
+| Q_loss        | 0.154  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 09:59:25 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 16/20  |
+| Episodes      | 11850  |
+| Timesteps     | 592500 |
+| TimeCost(sec) | 59.917 |
+| Pi_q_loss     | 2.086  |
+| Pi_l2_loss    | 0.124  |
+| Q_loss        | 0.156  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:00:26 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 17/20  |
+| Episodes      | 11900  |
+| Timesteps     | 595000 |
+| TimeCost(sec) | 60.791 |
+| Pi_q_loss     | 2.07   |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.163  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:01:28 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 18/20  |
+| Episodes      | 11950  |
+| Timesteps     | 597500 |
+| TimeCost(sec) | 61.232 |
+| Pi_q_loss     | 2.073  |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.141  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:02:28 000
++---------------+--------+
+| Epoch         | 11/20  |
+| Cycle         | 19/20  |
+| Episodes      | 12000  |
+| Timesteps     | 600000 |
+| TimeCost(sec) | 60.368 |
+| Pi_q_loss     | 2.079  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.15   |
+| Success       | 1.0    |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 10:03:29 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 0/20   |
+| Episodes      | 12050  |
+| Timesteps     | 602500 |
+| TimeCost(sec) | 60.364 |
+| Pi_q_loss     | 2.102  |
+| Pi_l2_loss    | 0.124  |
+| Q_loss        | 0.152  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 10:04:29 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 1/20   |
+| Episodes      | 12100  |
+| Timesteps     | 605000 |
+| TimeCost(sec) | 59.918 |
+| Pi_q_loss     | 2.09   |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.15   |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:05:30 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 2/20   |
+| Episodes      | 12150  |
+| Timesteps     | 607500 |
+| TimeCost(sec) | 61.223 |
+| Pi_q_loss     | 2.105  |
+| Pi_l2_loss    | 0.124  |
+| Q_loss        | 0.146  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:06:32 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 3/20   |
+| Episodes      | 12200  |
+| Timesteps     | 610000 |
+| TimeCost(sec) | 61.157 |
+| Pi_q_loss     | 2.102  |
+| Pi_l2_loss    | 0.124  |
+| Q_loss        | 0.143  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:07:32 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 4/20   |
+| Episodes      | 12250  |
+| Timesteps     | 612500 |
+| TimeCost(sec) | 60.464 |
+| Pi_q_loss     | 2.087  |
+| Pi_l2_loss    | 0.124  |
+| Q_loss        | 0.142  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:08:32 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 5/20   |
+| Episodes      | 12300  |
+| Timesteps     | 615000 |
+| TimeCost(sec) | 59.558 |
+| Pi_q_loss     | 2.106  |
+| Pi_l2_loss    | 0.124  |
+| Q_loss        | 0.148  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 10:09:33 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 6/20   |
+| Episodes      | 12350  |
+| Timesteps     | 617500 |
+| TimeCost(sec) | 60.895 |
+| Pi_q_loss     | 2.131  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.148  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:10:33 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 7/20   |
+| Episodes      | 12400  |
+| Timesteps     | 620000 |
+| TimeCost(sec) | 59.405 |
+| Pi_q_loss     | 2.122  |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.162  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 10:11:33 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 8/20   |
+| Episodes      | 12450  |
+| Timesteps     | 622500 |
+| TimeCost(sec) | 59.674 |
+| Pi_q_loss     | 2.158  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.164  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 10:12:34 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 9/20   |
+| Episodes      | 12500  |
+| Timesteps     | 625000 |
+| TimeCost(sec) | 61.306 |
+| Pi_q_loss     | 2.146  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.159  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:13:34 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 10/20  |
+| Episodes      | 12550  |
+| Timesteps     | 627500 |
+| TimeCost(sec) | 59.614 |
+| Pi_q_loss     | 2.148  |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.155  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:14:36 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 11/20  |
+| Episodes      | 12600  |
+| Timesteps     | 630000 |
+| TimeCost(sec) | 62.148 |
+| Pi_q_loss     | 2.173  |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.153  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 10:15:37 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 12/20  |
+| Episodes      | 12650  |
+| Timesteps     | 632500 |
+| TimeCost(sec) | 60.572 |
+| Pi_q_loss     | 2.166  |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.162  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:16:38 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 13/20  |
+| Episodes      | 12700  |
+| Timesteps     | 635000 |
+| TimeCost(sec) | 60.589 |
+| Pi_q_loss     | 2.116  |
+| Pi_l2_loss    | 0.124  |
+| Q_loss        | 0.158  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:17:39 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 14/20  |
+| Episodes      | 12750  |
+| Timesteps     | 637500 |
+| TimeCost(sec) | 61.637 |
+| Pi_q_loss     | 2.088  |
+| Pi_l2_loss    | 0.125  |
+| Q_loss        | 0.158  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:18:41 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 15/20  |
+| Episodes      | 12800  |
+| Timesteps     | 640000 |
+| TimeCost(sec) | 61.173 |
+| Pi_q_loss     | 2.055  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.167  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:19:41 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 16/20  |
+| Episodes      | 12850  |
+| Timesteps     | 642500 |
+| TimeCost(sec) | 59.932 |
+| Pi_q_loss     | 2.078  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.156  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 10:20:41 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 17/20  |
+| Episodes      | 12900  |
+| Timesteps     | 645000 |
+| TimeCost(sec) | 60.174 |
+| Pi_q_loss     | 2.063  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.162  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:21:41 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 18/20  |
+| Episodes      | 12950  |
+| Timesteps     | 647500 |
+| TimeCost(sec) | 59.622 |
+| Pi_q_loss     | 2.068  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.156  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:22:41 000
++---------------+--------+
+| Epoch         | 12/20  |
+| Cycle         | 19/20  |
+| Episodes      | 13000  |
+| Timesteps     | 650000 |
+| TimeCost(sec) | 59.744 |
+| Pi_q_loss     | 2.07   |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.156  |
+| Success       | 1.0    |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 10:23:42 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 0/20   |
+| Episodes      | 13050  |
+| Timesteps     | 652500 |
+| TimeCost(sec) | 61.038 |
+| Pi_q_loss     | 2.027  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.149  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:24:42 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 1/20   |
+| Episodes      | 13100  |
+| Timesteps     | 655000 |
+| TimeCost(sec) | 59.824 |
+| Pi_q_loss     | 2.013  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.152  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:25:43 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 2/20   |
+| Episodes      | 13150  |
+| Timesteps     | 657500 |
+| TimeCost(sec) | 60.088 |
+| Pi_q_loss     | 2.018  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.154  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:26:43 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 3/20   |
+| Episodes      | 13200  |
+| Timesteps     | 660000 |
+| TimeCost(sec) | 60.564 |
+| Pi_q_loss     | 2.02   |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.158  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:27:43 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 4/20   |
+| Episodes      | 13250  |
+| Timesteps     | 662500 |
+| TimeCost(sec) | 59.59  |
+| Pi_q_loss     | 2.009  |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.138  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:28:42 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 5/20   |
+| Episodes      | 13300  |
+| Timesteps     | 665000 |
+| TimeCost(sec) | 59.093 |
+| Pi_q_loss     | 1.991  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.13   |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 10:29:42 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 6/20   |
+| Episodes      | 13350  |
+| Timesteps     | 667500 |
+| TimeCost(sec) | 59.741 |
+| Pi_q_loss     | 2.01   |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.139  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:30:42 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 7/20   |
+| Episodes      | 13400  |
+| Timesteps     | 670000 |
+| TimeCost(sec) | 59.723 |
+| Pi_q_loss     | 2.002  |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.131  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:31:42 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 8/20   |
+| Episodes      | 13450  |
+| Timesteps     | 672500 |
+| TimeCost(sec) | 59.922 |
+| Pi_q_loss     | 2.005  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.135  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:32:43 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 9/20   |
+| Episodes      | 13500  |
+| Timesteps     | 675000 |
+| TimeCost(sec) | 60.082 |
+| Pi_q_loss     | 1.992  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.135  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:33:43 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 10/20  |
+| Episodes      | 13550  |
+| Timesteps     | 677500 |
+| TimeCost(sec) | 60.31  |
+| Pi_q_loss     | 1.972  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.133  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:34:44 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 11/20  |
+| Episodes      | 13600  |
+| Timesteps     | 680000 |
+| TimeCost(sec) | 60.555 |
+| Pi_q_loss     | 1.984  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.132  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:35:44 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 12/20  |
+| Episodes      | 13650  |
+| Timesteps     | 682500 |
+| TimeCost(sec) | 60.427 |
+| Pi_q_loss     | 1.982  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.14   |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:36:47 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 13/20  |
+| Episodes      | 13700  |
+| Timesteps     | 685000 |
+| TimeCost(sec) | 61.935 |
+| Pi_q_loss     | 2.0    |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.138  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:37:47 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 14/20  |
+| Episodes      | 13750  |
+| Timesteps     | 687500 |
+| TimeCost(sec) | 60.287 |
+| Pi_q_loss     | 1.977  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.146  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:38:48 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 15/20  |
+| Episodes      | 13800  |
+| Timesteps     | 690000 |
+| TimeCost(sec) | 60.719 |
+| Pi_q_loss     | 1.992  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.139  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:39:50 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 16/20  |
+| Episodes      | 13850  |
+| Timesteps     | 692500 |
+| TimeCost(sec) | 61.533 |
+| Pi_q_loss     | 1.995  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.134  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:40:50 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 17/20  |
+| Episodes      | 13900  |
+| Timesteps     | 695000 |
+| TimeCost(sec) | 60.507 |
+| Pi_q_loss     | 1.994  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.148  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:41:50 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 18/20  |
+| Episodes      | 13950  |
+| Timesteps     | 697500 |
+| TimeCost(sec) | 59.288 |
+| Pi_q_loss     | 1.998  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.138  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:42:51 000
++---------------+--------+
+| Epoch         | 13/20  |
+| Cycle         | 19/20  |
+| Episodes      | 14000  |
+| Timesteps     | 700000 |
+| TimeCost(sec) | 61.141 |
+| Pi_q_loss     | 1.996  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.143  |
+| Success       | 0.99   |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 10:43:51 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 0/20   |
+| Episodes      | 14050  |
+| Timesteps     | 702500 |
+| TimeCost(sec) | 59.371 |
+| Pi_q_loss     | 1.991  |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.132  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:44:50 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 1/20   |
+| Episodes      | 14100  |
+| Timesteps     | 705000 |
+| TimeCost(sec) | 59.317 |
+| Pi_q_loss     | 1.972  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.139  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 10:45:51 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 2/20   |
+| Episodes      | 14150  |
+| Timesteps     | 707500 |
+| TimeCost(sec) | 60.856 |
+| Pi_q_loss     | 1.983  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.137  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:46:51 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 3/20   |
+| Episodes      | 14200  |
+| Timesteps     | 710000 |
+| TimeCost(sec) | 59.707 |
+| Pi_q_loss     | 1.969  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.15   |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 10:47:50 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 4/20   |
+| Episodes      | 14250  |
+| Timesteps     | 712500 |
+| TimeCost(sec) | 58.771 |
+| Pi_q_loss     | 1.989  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.138  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:48:50 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 5/20   |
+| Episodes      | 14300  |
+| Timesteps     | 715000 |
+| TimeCost(sec) | 59.968 |
+| Pi_q_loss     | 1.989  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.135  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:49:49 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 6/20   |
+| Episodes      | 14350  |
+| Timesteps     | 717500 |
+| TimeCost(sec) | 58.927 |
+| Pi_q_loss     | 2.0    |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.136  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:50:50 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 7/20   |
+| Episodes      | 14400  |
+| Timesteps     | 720000 |
+| TimeCost(sec) | 60.284 |
+| Pi_q_loss     | 1.994  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.146  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:51:50 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 8/20   |
+| Episodes      | 14450  |
+| Timesteps     | 722500 |
+| TimeCost(sec) | 59.557 |
+| Pi_q_loss     | 1.996  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.137  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:52:50 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 9/20   |
+| Episodes      | 14500  |
+| Timesteps     | 725000 |
+| TimeCost(sec) | 59.755 |
+| Pi_q_loss     | 1.997  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.147  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:53:50 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 10/20  |
+| Episodes      | 14550  |
+| Timesteps     | 727500 |
+| TimeCost(sec) | 60.323 |
+| Pi_q_loss     | 1.992  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.14   |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 10:54:51 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 11/20  |
+| Episodes      | 14600  |
+| Timesteps     | 730000 |
+| TimeCost(sec) | 60.312 |
+| Pi_q_loss     | 1.997  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.139  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:55:50 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 12/20  |
+| Episodes      | 14650  |
+| Timesteps     | 732500 |
+| TimeCost(sec) | 59.412 |
+| Pi_q_loss     | 1.977  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.151  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:56:51 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 13/20  |
+| Episodes      | 14700  |
+| Timesteps     | 735000 |
+| TimeCost(sec) | 60.823 |
+| Pi_q_loss     | 1.968  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.139  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:57:51 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 14/20  |
+| Episodes      | 14750  |
+| Timesteps     | 737500 |
+| TimeCost(sec) | 59.422 |
+| Pi_q_loss     | 1.977  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.131  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:58:52 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 15/20  |
+| Episodes      | 14800  |
+| Timesteps     | 740000 |
+| TimeCost(sec) | 60.753 |
+| Pi_q_loss     | 1.997  |
+| Pi_l2_loss    | 0.118  |
+| Q_loss        | 0.133  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 10:59:51 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 16/20  |
+| Episodes      | 14850  |
+| Timesteps     | 742500 |
+| TimeCost(sec) | 59.082 |
+| Pi_q_loss     | 1.999  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.138  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 11:00:52 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 17/20  |
+| Episodes      | 14900  |
+| Timesteps     | 745000 |
+| TimeCost(sec) | 60.832 |
+| Pi_q_loss     | 2.003  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.136  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:01:52 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 18/20  |
+| Episodes      | 14950  |
+| Timesteps     | 747500 |
+| TimeCost(sec) | 60.032 |
+| Pi_q_loss     | 2.025  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.136  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:02:52 000
++---------------+--------+
+| Epoch         | 14/20  |
+| Cycle         | 19/20  |
+| Episodes      | 15000  |
+| Timesteps     | 750000 |
+| TimeCost(sec) | 59.888 |
+| Pi_q_loss     | 2.042  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.143  |
+| Success       | 1.0    |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 11:03:53 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 0/20   |
+| Episodes      | 15050  |
+| Timesteps     | 752500 |
+| TimeCost(sec) | 60.473 |
+| Pi_q_loss     | 2.037  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.139  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:04:53 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 1/20   |
+| Episodes      | 15100  |
+| Timesteps     | 755000 |
+| TimeCost(sec) | 59.678 |
+| Pi_q_loss     | 2.036  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.142  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:05:55 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 2/20   |
+| Episodes      | 15150  |
+| Timesteps     | 757500 |
+| TimeCost(sec) | 61.666 |
+| Pi_q_loss     | 2.058  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.146  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:06:55 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 3/20   |
+| Episodes      | 15200  |
+| Timesteps     | 760000 |
+| TimeCost(sec) | 60.045 |
+| Pi_q_loss     | 2.02   |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.141  |
+| Success       | 0.96   |
++---------------+--------+
+2021-12-07 11:07:55 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 4/20   |
+| Episodes      | 15250  |
+| Timesteps     | 762500 |
+| TimeCost(sec) | 60.464 |
+| Pi_q_loss     | 2.024  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.141  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:08:55 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 5/20   |
+| Episodes      | 15300  |
+| Timesteps     | 765000 |
+| TimeCost(sec) | 59.273 |
+| Pi_q_loss     | 2.011  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.146  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:09:55 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 6/20   |
+| Episodes      | 15350  |
+| Timesteps     | 767500 |
+| TimeCost(sec) | 60.29  |
+| Pi_q_loss     | 2.022  |
+| Pi_l2_loss    | 0.118  |
+| Q_loss        | 0.149  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:10:55 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 7/20   |
+| Episodes      | 15400  |
+| Timesteps     | 770000 |
+| TimeCost(sec) | 59.274 |
+| Pi_q_loss     | 2.013  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.145  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:11:54 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 8/20   |
+| Episodes      | 15450  |
+| Timesteps     | 772500 |
+| TimeCost(sec) | 58.786 |
+| Pi_q_loss     | 2.011  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.145  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:12:53 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 9/20   |
+| Episodes      | 15500  |
+| Timesteps     | 775000 |
+| TimeCost(sec) | 59.188 |
+| Pi_q_loss     | 1.998  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.15   |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:13:52 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 10/20  |
+| Episodes      | 15550  |
+| Timesteps     | 777500 |
+| TimeCost(sec) | 59.131 |
+| Pi_q_loss     | 1.96   |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.154  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:14:52 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 11/20  |
+| Episodes      | 15600  |
+| Timesteps     | 780000 |
+| TimeCost(sec) | 59.52  |
+| Pi_q_loss     | 1.978  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.141  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:15:52 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 12/20  |
+| Episodes      | 15650  |
+| Timesteps     | 782500 |
+| TimeCost(sec) | 60.206 |
+| Pi_q_loss     | 1.968  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.138  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 11:16:52 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 13/20  |
+| Episodes      | 15700  |
+| Timesteps     | 785000 |
+| TimeCost(sec) | 59.47  |
+| Pi_q_loss     | 1.962  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.146  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:17:51 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 14/20  |
+| Episodes      | 15750  |
+| Timesteps     | 787500 |
+| TimeCost(sec) | 59.113 |
+| Pi_q_loss     | 1.98   |
+| Pi_l2_loss    | 0.118  |
+| Q_loss        | 0.169  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:18:52 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 15/20  |
+| Episodes      | 15800  |
+| Timesteps     | 790000 |
+| TimeCost(sec) | 60.355 |
+| Pi_q_loss     | 2.006  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.154  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:19:52 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 16/20  |
+| Episodes      | 15850  |
+| Timesteps     | 792500 |
+| TimeCost(sec) | 59.422 |
+| Pi_q_loss     | 2.021  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.151  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:20:51 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 17/20  |
+| Episodes      | 15900  |
+| Timesteps     | 795000 |
+| TimeCost(sec) | 59.754 |
+| Pi_q_loss     | 2.022  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.147  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 11:21:51 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 18/20  |
+| Episodes      | 15950  |
+| Timesteps     | 797500 |
+| TimeCost(sec) | 59.376 |
+| Pi_q_loss     | 2.025  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.152  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:22:51 000
++---------------+--------+
+| Epoch         | 15/20  |
+| Cycle         | 19/20  |
+| Episodes      | 16000  |
+| Timesteps     | 800000 |
+| TimeCost(sec) | 59.442 |
+| Pi_q_loss     | 2.016  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.147  |
+| Success       | 1.0    |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 11:23:50 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 0/20   |
+| Episodes      | 16050  |
+| Timesteps     | 802500 |
+| TimeCost(sec) | 59.254 |
+| Pi_q_loss     | 2.046  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.15   |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 11:24:50 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 1/20   |
+| Episodes      | 16100  |
+| Timesteps     | 805000 |
+| TimeCost(sec) | 59.163 |
+| Pi_q_loss     | 2.03   |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.136  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:25:49 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 2/20   |
+| Episodes      | 16150  |
+| Timesteps     | 807500 |
+| TimeCost(sec) | 58.891 |
+| Pi_q_loss     | 2.017  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.161  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:26:48 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 3/20   |
+| Episodes      | 16200  |
+| Timesteps     | 810000 |
+| TimeCost(sec) | 59.24  |
+| Pi_q_loss     | 2.029  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.163  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:27:47 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 4/20   |
+| Episodes      | 16250  |
+| Timesteps     | 812500 |
+| TimeCost(sec) | 59.223 |
+| Pi_q_loss     | 2.03   |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.155  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:28:47 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 5/20   |
+| Episodes      | 16300  |
+| Timesteps     | 815000 |
+| TimeCost(sec) | 59.352 |
+| Pi_q_loss     | 2.024  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.162  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:29:47 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 6/20   |
+| Episodes      | 16350  |
+| Timesteps     | 817500 |
+| TimeCost(sec) | 59.648 |
+| Pi_q_loss     | 2.015  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.144  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:30:47 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 7/20   |
+| Episodes      | 16400  |
+| Timesteps     | 820000 |
+| TimeCost(sec) | 60.316 |
+| Pi_q_loss     | 2.006  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.152  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:31:47 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 8/20   |
+| Episodes      | 16450  |
+| Timesteps     | 822500 |
+| TimeCost(sec) | 60.095 |
+| Pi_q_loss     | 2.012  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.147  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 11:32:49 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 9/20   |
+| Episodes      | 16500  |
+| Timesteps     | 825000 |
+| TimeCost(sec) | 61.439 |
+| Pi_q_loss     | 2.02   |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.155  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:33:49 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 10/20  |
+| Episodes      | 16550  |
+| Timesteps     | 827500 |
+| TimeCost(sec) | 60.224 |
+| Pi_q_loss     | 2.026  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.151  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:34:51 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 11/20  |
+| Episodes      | 16600  |
+| Timesteps     | 830000 |
+| TimeCost(sec) | 61.099 |
+| Pi_q_loss     | 2.008  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.153  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:35:51 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 12/20  |
+| Episodes      | 16650  |
+| Timesteps     | 832500 |
+| TimeCost(sec) | 60.38  |
+| Pi_q_loss     | 1.992  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.156  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:36:52 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 13/20  |
+| Episodes      | 16700  |
+| Timesteps     | 835000 |
+| TimeCost(sec) | 60.461 |
+| Pi_q_loss     | 1.984  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.156  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 11:37:53 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 14/20  |
+| Episodes      | 16750  |
+| Timesteps     | 837500 |
+| TimeCost(sec) | 60.511 |
+| Pi_q_loss     | 1.993  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.15   |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:38:54 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 15/20  |
+| Episodes      | 16800  |
+| Timesteps     | 840000 |
+| TimeCost(sec) | 60.879 |
+| Pi_q_loss     | 1.994  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.164  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:39:54 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 16/20  |
+| Episodes      | 16850  |
+| Timesteps     | 842500 |
+| TimeCost(sec) | 59.966 |
+| Pi_q_loss     | 2.012  |
+| Pi_l2_loss    | 0.117  |
+| Q_loss        | 0.168  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:40:56 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 17/20  |
+| Episodes      | 16900  |
+| Timesteps     | 845000 |
+| TimeCost(sec) | 61.477 |
+| Pi_q_loss     | 2.021  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.171  |
+| Success       | 0.97   |
++---------------+--------+
+2021-12-07 11:41:56 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 18/20  |
+| Episodes      | 16950  |
+| Timesteps     | 847500 |
+| TimeCost(sec) | 60.523 |
+| Pi_q_loss     | 1.979  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.156  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:42:57 000
++---------------+--------+
+| Epoch         | 16/20  |
+| Cycle         | 19/20  |
+| Episodes      | 17000  |
+| Timesteps     | 850000 |
+| TimeCost(sec) | 60.456 |
+| Pi_q_loss     | 2.0    |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.161  |
+| Success       | 0.99   |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 11:43:58 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 0/20   |
+| Episodes      | 17050  |
+| Timesteps     | 852500 |
+| TimeCost(sec) | 60.329 |
+| Pi_q_loss     | 2.007  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.149  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:44:59 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 1/20   |
+| Episodes      | 17100  |
+| Timesteps     | 855000 |
+| TimeCost(sec) | 61.799 |
+| Pi_q_loss     | 2.017  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.157  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:46:01 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 2/20   |
+| Episodes      | 17150  |
+| Timesteps     | 857500 |
+| TimeCost(sec) | 61.264 |
+| Pi_q_loss     | 2.026  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.167  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:47:01 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 3/20   |
+| Episodes      | 17200  |
+| Timesteps     | 860000 |
+| TimeCost(sec) | 60.27  |
+| Pi_q_loss     | 2.006  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.167  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 11:48:03 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 4/20   |
+| Episodes      | 17250  |
+| Timesteps     | 862500 |
+| TimeCost(sec) | 61.44  |
+| Pi_q_loss     | 2.011  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.16   |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 11:49:04 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 5/20   |
+| Episodes      | 17300  |
+| Timesteps     | 865000 |
+| TimeCost(sec) | 60.976 |
+| Pi_q_loss     | 1.988  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.145  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:50:04 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 6/20   |
+| Episodes      | 17350  |
+| Timesteps     | 867500 |
+| TimeCost(sec) | 60.106 |
+| Pi_q_loss     | 2.007  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.156  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 11:51:04 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 7/20   |
+| Episodes      | 17400  |
+| Timesteps     | 870000 |
+| TimeCost(sec) | 59.614 |
+| Pi_q_loss     | 2.026  |
+| Pi_l2_loss    | 0.123  |
+| Q_loss        | 0.162  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 11:52:03 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 8/20   |
+| Episodes      | 17450  |
+| Timesteps     | 872500 |
+| TimeCost(sec) | 58.909 |
+| Pi_q_loss     | 2.025  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.173  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:53:02 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 9/20   |
+| Episodes      | 17500  |
+| Timesteps     | 875000 |
+| TimeCost(sec) | 58.47  |
+| Pi_q_loss     | 2.017  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.169  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 11:54:01 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 10/20  |
+| Episodes      | 17550  |
+| Timesteps     | 877500 |
+| TimeCost(sec) | 59.072 |
+| Pi_q_loss     | 2.005  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.151  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:55:00 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 11/20  |
+| Episodes      | 17600  |
+| Timesteps     | 880000 |
+| TimeCost(sec) | 58.47  |
+| Pi_q_loss     | 2.003  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.154  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:55:59 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 12/20  |
+| Episodes      | 17650  |
+| Timesteps     | 882500 |
+| TimeCost(sec) | 59.015 |
+| Pi_q_loss     | 1.995  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.15   |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 11:56:58 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 13/20  |
+| Episodes      | 17700  |
+| Timesteps     | 885000 |
+| TimeCost(sec) | 58.586 |
+| Pi_q_loss     | 2.003  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.14   |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:57:56 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 14/20  |
+| Episodes      | 17750  |
+| Timesteps     | 887500 |
+| TimeCost(sec) | 58.461 |
+| Pi_q_loss     | 2.013  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.16   |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 11:58:55 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 15/20  |
+| Episodes      | 17800  |
+| Timesteps     | 890000 |
+| TimeCost(sec) | 58.568 |
+| Pi_q_loss     | 2.018  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.157  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 11:59:54 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 16/20  |
+| Episodes      | 17850  |
+| Timesteps     | 892500 |
+| TimeCost(sec) | 58.706 |
+| Pi_q_loss     | 2.002  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.152  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:00:53 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 17/20  |
+| Episodes      | 17900  |
+| Timesteps     | 895000 |
+| TimeCost(sec) | 58.841 |
+| Pi_q_loss     | 2.007  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.156  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 12:01:52 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 18/20  |
+| Episodes      | 17950  |
+| Timesteps     | 897500 |
+| TimeCost(sec) | 58.591 |
+| Pi_q_loss     | 2.029  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.153  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:02:51 000
++---------------+--------+
+| Epoch         | 17/20  |
+| Cycle         | 19/20  |
+| Episodes      | 18000  |
+| Timesteps     | 900000 |
+| TimeCost(sec) | 58.718 |
+| Pi_q_loss     | 2.035  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.161  |
+| Success       | 1.0    |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 12:03:50 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 0/20   |
+| Episodes      | 18050  |
+| Timesteps     | 902500 |
+| TimeCost(sec) | 58.678 |
+| Pi_q_loss     | 2.053  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.166  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:04:48 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 1/20   |
+| Episodes      | 18100  |
+| Timesteps     | 905000 |
+| TimeCost(sec) | 58.507 |
+| Pi_q_loss     | 2.058  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.163  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:05:47 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 2/20   |
+| Episodes      | 18150  |
+| Timesteps     | 907500 |
+| TimeCost(sec) | 59.02  |
+| Pi_q_loss     | 2.052  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.149  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 12:06:47 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 3/20   |
+| Episodes      | 18200  |
+| Timesteps     | 910000 |
+| TimeCost(sec) | 58.827 |
+| Pi_q_loss     | 2.04   |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.153  |
+| Success       | 0.95   |
++---------------+--------+
+2021-12-07 12:07:46 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 4/20   |
+| Episodes      | 18250  |
+| Timesteps     | 912500 |
+| TimeCost(sec) | 58.946 |
+| Pi_q_loss     | 2.049  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.163  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 12:08:45 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 5/20   |
+| Episodes      | 18300  |
+| Timesteps     | 915000 |
+| TimeCost(sec) | 59.302 |
+| Pi_q_loss     | 2.057  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.15   |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:09:45 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 6/20   |
+| Episodes      | 18350  |
+| Timesteps     | 917500 |
+| TimeCost(sec) | 59.711 |
+| Pi_q_loss     | 2.054  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.162  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 12:10:45 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 7/20   |
+| Episodes      | 18400  |
+| Timesteps     | 920000 |
+| TimeCost(sec) | 59.993 |
+| Pi_q_loss     | 2.056  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.169  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 12:11:46 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 8/20   |
+| Episodes      | 18450  |
+| Timesteps     | 922500 |
+| TimeCost(sec) | 60.296 |
+| Pi_q_loss     | 2.038  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.166  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:12:49 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 9/20   |
+| Episodes      | 18500  |
+| Timesteps     | 925000 |
+| TimeCost(sec) | 63.699 |
+| Pi_q_loss     | 2.04   |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.168  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 12:13:51 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 10/20  |
+| Episodes      | 18550  |
+| Timesteps     | 927500 |
+| TimeCost(sec) | 61.171 |
+| Pi_q_loss     | 2.054  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.171  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 12:14:54 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 11/20  |
+| Episodes      | 18600  |
+| Timesteps     | 930000 |
+| TimeCost(sec) | 62.878 |
+| Pi_q_loss     | 2.034  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.172  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 12:15:56 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 12/20  |
+| Episodes      | 18650  |
+| Timesteps     | 932500 |
+| TimeCost(sec) | 61.623 |
+| Pi_q_loss     | 2.031  |
+| Pi_l2_loss    | 0.122  |
+| Q_loss        | 0.164  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 12:16:57 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 13/20  |
+| Episodes      | 18700  |
+| Timesteps     | 935000 |
+| TimeCost(sec) | 61.268 |
+| Pi_q_loss     | 2.017  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.168  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 12:17:58 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 14/20  |
+| Episodes      | 18750  |
+| Timesteps     | 937500 |
+| TimeCost(sec) | 60.709 |
+| Pi_q_loss     | 2.019  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.192  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:18:59 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 15/20  |
+| Episodes      | 18800  |
+| Timesteps     | 940000 |
+| TimeCost(sec) | 60.655 |
+| Pi_q_loss     | 2.019  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.156  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 12:19:58 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 16/20  |
+| Episodes      | 18850  |
+| Timesteps     | 942500 |
+| TimeCost(sec) | 59.456 |
+| Pi_q_loss     | 2.03   |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.156  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:21:02 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 17/20  |
+| Episodes      | 18900  |
+| Timesteps     | 945000 |
+| TimeCost(sec) | 63.099 |
+| Pi_q_loss     | 2.04   |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.167  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 12:22:02 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 18/20  |
+| Episodes      | 18950  |
+| Timesteps     | 947500 |
+| TimeCost(sec) | 60.421 |
+| Pi_q_loss     | 2.042  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.155  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:23:03 000
++---------------+--------+
+| Epoch         | 18/20  |
+| Cycle         | 19/20  |
+| Episodes      | 19000  |
+| Timesteps     | 950000 |
+| TimeCost(sec) | 60.787 |
+| Pi_q_loss     | 2.037  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.152  |
+| Success       | 1.0    |
++---------------+--------+
+Saved periodic policy to log/000-ddpg-FetchPush-v1-normal-07-12-2021_06-03-18/!
+2021-12-07 12:24:04 000
++---------------+--------+
+| Epoch         | 19/20  |
+| Cycle         | 0/20   |
+| Episodes      | 19050  |
+| Timesteps     | 952500 |
+| TimeCost(sec) | 60.477 |
+| Pi_q_loss     | 2.06   |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.168  |
+| Success       | 0.96   |
++---------------+--------+
+2021-12-07 12:25:05 000
++---------------+--------+
+| Epoch         | 19/20  |
+| Cycle         | 1/20   |
+| Episodes      | 19100  |
+| Timesteps     | 955000 |
+| TimeCost(sec) | 61.092 |
+| Pi_q_loss     | 2.073  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.153  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 12:26:08 000
++---------------+--------+
+| Epoch         | 19/20  |
+| Cycle         | 2/20   |
+| Episodes      | 19150  |
+| Timesteps     | 957500 |
+| TimeCost(sec) | 61.953 |
+| Pi_q_loss     | 2.049  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.15   |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 12:27:07 000
++---------------+--------+
+| Epoch         | 19/20  |
+| Cycle         | 3/20   |
+| Episodes      | 19200  |
+| Timesteps     | 960000 |
+| TimeCost(sec) | 59.294 |
+| Pi_q_loss     | 2.059  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.163  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:28:07 000
++---------------+--------+
+| Epoch         | 19/20  |
+| Cycle         | 4/20   |
+| Episodes      | 19250  |
+| Timesteps     | 962500 |
+| TimeCost(sec) | 59.623 |
+| Pi_q_loss     | 2.053  |
+| Pi_l2_loss    | 0.121  |
+| Q_loss        | 0.164  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 12:29:07 000
++---------------+--------+
+| Epoch         | 19/20  |
+| Cycle         | 5/20   |
+| Episodes      | 19300  |
+| Timesteps     | 965000 |
+| TimeCost(sec) | 60.196 |
+| Pi_q_loss     | 2.063  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.178  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:30:07 000
++---------------+--------+
+| Epoch         | 19/20  |
+| Cycle         | 6/20   |
+| Episodes      | 19350  |
+| Timesteps     | 967500 |
+| TimeCost(sec) | 60.007 |
+| Pi_q_loss     | 2.062  |
+| Pi_l2_loss    | 0.118  |
+| Q_loss        | 0.163  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 12:31:09 000
++---------------+--------+
+| Epoch         | 19/20  |
+| Cycle         | 7/20   |
+| Episodes      | 19400  |
+| Timesteps     | 970000 |
+| TimeCost(sec) | 60.99  |
+| Pi_q_loss     | 2.064  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.154  |
+| Success       | 1.0    |
++---------------+--------+
+2021-12-07 12:32:10 000
++---------------+--------+
+| Epoch         | 19/20  |
+| Cycle         | 8/20   |
+| Episodes      | 19450  |
+| Timesteps     | 972500 |
+| TimeCost(sec) | 61.118 |
+| Pi_q_loss     | 2.074  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.159  |
+| Success       | 0.98   |
++---------------+--------+
+2021-12-07 12:33:11 000
++---------------+--------+
+| Epoch         | 19/20  |
+| Cycle         | 9/20   |
+| Episodes      | 19500  |
+| Timesteps     | 975000 |
+| TimeCost(sec) | 60.931 |
+| Pi_q_loss     | 2.078  |
+| Pi_l2_loss    | 0.119  |
+| Q_loss        | 0.155  |
+| Success       | 0.99   |
++---------------+--------+
+2021-12-07 12:34:13 000
++---------------+--------+
+| Epoch         | 19/20  |
+| Cycle         | 10/20  |
+| Episodes      | 19550  |
+| Timesteps     | 977500 |
+| TimeCost(sec) | 61.745 |
+| Pi_q_loss     | 2.077  |
+| Pi_l2_loss    | 0.12   |
+| Q_loss        | 0.157  |
+| Success       | 0.98   |
++---------------+--------+

@@ -1,0 +1,98 @@
+tag: mep
+alg: ddpg
+learn: hgg
+env: FetchPickAndPlace-v1
+goal: custom
+init_offset: 1.0
+graph: False
+show_goals: 0
+play_path: None
+play_epoch: latest
+stop_hgg_threshold: 2
+n_x: 31
+n_y: 31
+n_z: 11
+gamma: 0.98
+clip_return: True
+eps_act: 0.3
+std_act: 0.2
+pi_lr: 0.001
+q_lr: 0.001
+act_l2: 1.0
+polyak: 0.95
+epoches: 20
+cycles: 20
+episodes: 50
+timesteps: 50
+train_batches: 20
+buffer_size: 10000
+buffer_type: mep
+batch_size: 256
+warmup: 10000
+her: future
+her_ratio: 0.8
+pool_rule: full
+hgg_c: 3.0
+hgg_L: 5.0
+hgg_pool_size: 1000
+save_acc: True
+rank_method: dense
+num_vertices: [31, 31, 11]
+goal_based: True
+clip_return_l: -49.99999999999996
+clip_return_r: 0.0
+*** network initialization complete ***
+*** tester initialization complete ***
+2021-12-13 23:20:24 mep
++---------------+----------+
+| Epoch         | 0/20     |
+| Cycle         | 0/20     |
+| Episodes      | 50       |
+| Timesteps     | 2500     |
+| TimeCost(sec) | 1040.954 |
+| Pi_q_loss     |          |
+| Pi_l2_loss    |          |
+| Q_loss        |          |
+| Success       | 0.0      |
++---------------+----------+
+Saved as best policy to log/mep-ddpg-FetchPickAndPlace-v1-hgg-13-12-2021_23-01-50/!
+Average inside: 0.78
+2021-12-13 23:45:42 mep
++---------------+---------+
+| Epoch         | 0/20    |
+| Cycle         | 1/20    |
+| Episodes      | 100     |
+| Timesteps     | 5000    |
+| TimeCost(sec) | 1518.15 |
+| Pi_q_loss     |         |
+| Pi_l2_loss    |         |
+| Q_loss        |         |
+| Success       | 0.03    |
++---------------+---------+
+Saved as best policy to log/mep-ddpg-FetchPickAndPlace-v1-hgg-13-12-2021_23-01-50/!
+Average inside: 0.68
+2021-12-14 00:24:23 mep
++---------------+----------+
+| Epoch         | 0/20     |
+| Cycle         | 2/20     |
+| Episodes      | 150      |
+| Timesteps     | 7500     |
+| TimeCost(sec) | 2320.646 |
+| Pi_q_loss     |          |
+| Pi_l2_loss    |          |
+| Q_loss        |          |
+| Success       | 0.01     |
++---------------+----------+
+Average inside: 0.78
+2021-12-14 01:40:38 mep
++---------------+----------+
+| Epoch         | 0/20     |
+| Cycle         | 3/20     |
+| Episodes      | 200      |
+| Timesteps     | 10000    |
+| TimeCost(sec) | 4574.762 |
+| Pi_q_loss     | 0.602    |
+| Pi_l2_loss    | 0.009    |
+| Q_loss        | 0.226    |
+| Success       | 0.03     |
++---------------+----------+
